@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
-  <link rel="stylesheet" type="text/css" href="style.css" />
-  <link rel="stylesheet" type="text/css" href="mystyle.css" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
   <script src="https://kit.fontawesome.com/d5f678f009.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -22,21 +22,17 @@
             <span class="sr-only">(current)</span>
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Créer un évènement</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Mon profil</a>
-        </li>
-      </ul>
-      <ul class="navbar-nav ml-auto">
+      
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Se connecter/Inscription</a>
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Molécules</a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Inscription</a>
-            <a class="dropdown-item" href="#">Connexion</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Déconnexion</a>
+            <a class="dropdown-item" href="#">Formulaires</a>
+            <a class="dropdown-item" href="#">Cards</a>
+            <a class="dropdown-item" href="#">Bannière</a>
+            <a class="dropdown-item" href="#">Commentaires</a>
+            <a class="dropdown-item" href="#">Présentations</a>
+            <a class="dropdown-item" href="#">Navbar</a>
+            <a class="dropdown-item" href="#">Footer</a>
           </div>
         </li>
       </ul>
@@ -355,10 +351,124 @@
         </div>
       </div>   
   </div>
+  <h2 class="mt-4 mb-4">| Présentation évènement</h2>
+
+    <div class="jumbotron p-3 p-md-5 text-white rounded hero-image-event">
+      <div class="col-md-6 px-0">
+        <h1 class="display-4 font-italic">Titre de l'évènement</h1>
+        <p class="lead my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget mauris id nisi feugiat iaculis. Nullam volutpat odio id congue ullamcorper. Cras vel fringilla lectus.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button"
+        >Participer</a >
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+          <div class="card-body d-flex flex-column align-items-start">
+            <strong class="d-inline-block mb-2 text-primary">Catégorie</strong>
+            <h3 class="mb-0">
+              <a class="text-dark" href="#">Date de l'évènement</a>
+            </h3>
+            <div class="mb-1 text-muted">11 novembre 2020 - 12h00-14h00</div>
+            <ul>
+              <li>Organisateur : Michael Jackson</li>
+              <li>Nombre de participants : 4</li>
+            </ul>
+            <a href="#">Ajouter aux favoris</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+          <div class="card-body d-flex flex-column align-items-start">
+            <strong class="d-inline-block mb-2 text-success">Information</strong>
+            <h3 class="mb-0">
+              <a class="text-dark" href="#">Prix</a>
+            </h3>
+            <div class="mb-1 text-muted" style="font-size: 2em;">12 €</div>
+            <p class="card-text mb-auto">Détail du prix :</p>
+            <ul>
+              <li>Location matériel : 6 € </li>
+              <li>Frais annexes : 6 €</li>
+            </ul>
+            <a href="#">Modes de paiements</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main role="main" class="container">
+      <div class="row">
+        <div class="col-md-8 blog-main">
+          <h3 class="pb-3 mt-3 mb-4 font-italic border-bottom">
+            Informations complémentaires
+          </h3>
+
+          <div class="blog-post">
+            <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+            <blockquote>
+              <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            </blockquote>
+            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+          </div>
+  </div>
 </div>
 
+<br/>
+<h2>| Présentation profil utilisateur</h2><br/>
+  <div class="row my-2">
+      <div class="col-lg-8 order-lg-2">
+          <ul class="nav nav-tabs">
+              <li class="nav-item">
+                  <a href="" data-target="#profile" data-toggle="tab" class="nav-link active">Profil</a>
+              </li>
+          </ul>
+          <div class="tab-content py-4">
+              <div class="tab-pane active" id="profile">
+                  <h5 class="mb-3" style="font-weight: 700">NOM Prénom</h5>
+                  <div class="row">
+                      <div class="col-md-6">
+                          <h6 style="font-weight: 700; text-align: justify;">Description</h6>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                          </p>
+                      </div>
+                      <div class="col-md-12">
+                          <h5 class="mt-2"><span class="fa fa-clock-o ion-clock float-right"></span> Évènements récents</h5>
+                          <table class="table table-sm table-hover table-striped">
+                              <tbody>                                    
+                                  <tr>
+                                      <td>
+                                          <strong>Prénom</strong> a participé à <strong>`Randonnée en forêt`</strong>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          <strong>Prénom</strong> a créé l'évènement <strong>`Cours de dance`</strong>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          <strong>Prénom</strong> a liké l'évènement <strong>`Dabber pendant 24h`</strong>
+                                      </td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                  </div>
+                  <!--/row-->
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-4 order-lg-1 text-center">
+          <img src="images/profil.png" alt="avatar">
+          <button class="btn btn-primary btn-block-sm" type="submit">Charger une photo</button>
+          <button class="btn btn-primary btn-block-sm mt-2" type="submit">Changer la photo</button>
+      </div>
+  </div>
+</div>
   <!-- Footer -->
-<footer class="page-footer bg-primary pt-1" style="width: 100%">
+<footer class="page-footer bg-primary pt-1 text-white" style="width: 100%">
 
   <!-- Footer Links -->
   <div class="container-fluid text-center text-md-left">

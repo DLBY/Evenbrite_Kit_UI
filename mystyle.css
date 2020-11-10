@@ -270,3 +270,28 @@ border-left   : 20px solid transparent;
 border-right  : 20px solid transparent;
 border-bottom : 15px solid #5a5753;
 }
+
+.hero-image-event {
+  background-image: url("images/48139.jpg");
+  background-size: cover;
+  background-position: center;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  height: 400px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-image-event::after 
+{
+    content: " ";
+    -webkit-filter: blur(8px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .4);
+    z-index: -1;
+  }
